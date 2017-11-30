@@ -1,0 +1,76 @@
+
+// layouts
+.pastor-page-body
+	+outer-container
+	.pastor-info-cont
+		+span-columns(8)
+		padding-top: 20px
+		padding-right: 10px
+		padding-left: 10px
+		padding-bottom: 20px
+		margin-bottom: 20px
+		border-right: 2px solid $silver
+	.aside-info-cont
+		+span-columns(4)
+		padding-right: 10px
+		padding-top: 20px
+		.aside-info
+			margin-bottom: 20px
+
+	@media(max-width: 600px)
+		.pastor-info-cont
+			+span-columns(12)
+			margin-bottom: 0
+			padding-bottom: 0
+		.aside-info-cont
+			+span-columns(12)
+			padding-top: 10px
+			.aside-info
+				float: left
+				margin-left: 10px
+
+// styles
+.pastor-info-cont
+	.pastor-card
+		vertical-align: top
+		.pastor-img
+			display: inline-block
+			img
+				width: 170px
+				height: 180px
+				border: 2px solid $silver
+				padding: 5px
+			@media(max-width: 740px)
+				display: block
+				img
+					display: block
+					margin: 0 auto 10px
+		.pastor-contact-info
+			display: inline-block
+			margin-left: 10px
+			vertical-align: top
+			.info-buttons
+				margin-bottom: 20px
+				margin-top: 30px
+				a
+					color: gray
+					border: 1px solid gray
+					border-radius: 5px
+					padding: 10px
+.aside-info-cont
+	.aside-info
+		padding: 5px
+		border-bottom: 2px solid $silver
+		.info-buttons
+			margin-bottom: 10px
+			margin-top: 10px
+			a
+				color: gray
+				border: 1px solid gray
+				border-radius: 5px
+				padding: 5px
+	@media(max-width: 600px)
+		border-top: 2px solid $silver
+		.aside-info
+			padding: 5px
+			padding-right: 10px

@@ -1,0 +1,195 @@
+//* main-header
+//******************************
+//******************************
+
+.main-header
+	position: relative
+	height: auto
+	background-color: #fff
+	
+
+.top-info-bar
+	background-color: $darkgreen
+	clear: both
+	+padding(10px)
+	a 
+		color: white
+		padding: 5px
+		padding-bottom: 3px
+		border-bottom: 1px solid white
+		&:hover
+			border-color: black
+			color: black     
+	span:last-child
+		float: right
+		@media(max-width: 450px)
+			display: none
+
+.main-logo
+	position: absolute
+	left: 50%
+	width: 20%
+
+	a
+		position: relative
+		left: -50%
+		background-color: transparent
+		display: block
+		width: 100%
+
+		img
+			width: 100%
+			height: auto
+	@media(max-width: 768px)
+		position: relative
+
+#nlcf-name
+	width: 100%
+	text-align: center
+	img
+		width: 80%
+		height: auto
+	@media(max-width: 580px)
+		img
+			width: 80%
+			height: auto
+		
+
+// **********Main Nav
+#main-nav
+	@media(max-width: 768px)
+		display: none
+	ul
+		+display(flex)
+		+flex-wrap($value: wrap)
+		margin: 20px
+		@media(max-width: 768px)
+			display: block
+			position: absolute
+			right: 0
+			bottom: 0
+			width: 60%
+			padding-bottom: 2px
+			margin: 0
+
+		li
+			width: 50%
+			margin-bottom: 20px
+
+			&:nth-child(odd)
+				div a
+					+transition(all 0.4s ease-in-out)
+					&:hover
+						padding-left: 10px
+						border-bottom: 2px solid $lightgreen
+					@media(max-width: 768px)
+						text-align: center
+						float: none
+						margin: 0
+						&:hover
+							padding-right: 0
+							border-bottom: 0
+							color: $lightgreen
+
+			&:nth-child(even)
+				div a
+					+transition(all 0.4s ease-in-out)
+					float: right
+					text-align: right
+					&:hover
+						padding-right: 10px
+						border-bottom: 2px solid $lightgreen
+					@media(max-width: 768px)
+						text-align: center
+						float: none
+						margin: 0
+						&:hover
+							padding-right: 0
+							border-bottom: 0
+
+			&:nth-child(5),
+			&:nth-child(6)
+				margin-bottom: 0
+			div
+				height: 40px
+				@media(max-width: 768px)
+					div 
+					height: auto
+					a
+						width: auto
+						padding-left: 20px
+
+				a
+					line-height: 1.5em
+					font-size: 18px
+					display: block
+					width: 100px
+					height: 100%
+					border-bottom: 1px solid $gray
+					@media(max-width: 768px)
+						border-bottom: 0
+						border-right: 1px solid $gray
+						&:nth-child(3)
+							border-right: 0
+					color: #756E6B
+
+					&.selected
+						color: #A1D1BC
+						border-bottom: 2px solid $lightgreen
+					@media(max-width: 768px)
+						border-bottom: 0
+
+
+			@media(max-width: 768px)
+				li
+				display: inline-block
+				float: none
+				margin: 0
+				margin-left: -5px
+				width: 30%
+				&:nth-child(4),
+				&:nth-child(5),
+				&:nth-child(6)
+					display: none
+				
+// ************Mobile Nav
+#mobileNav
+	height: 0
+	overflow: hidden
+.slicknav_menu
+	@media(min-width: 768px)
+		display: none
+	.slicknav_btn
+		background-color: $darkgreen
+
+
+//* footer
+//******************************
+//******************************
+
+
+.main-footer
+	position: relative
+	background-color: $darkgreen
+	height: auto
+	padding-bottom: 10px
+
+	.social-media-cont
+		display: block
+		width: 100%
+		text-align: center
+		p
+			font-size: 0.8em
+			margin: 0
+		a 
+			&:last-child
+				margin-left: 5px
+			img
+				+size(30px)
+			
+	.copyright-cont
+		width: 100%
+		font-size: 0.8em
+		text-align: center
+		p
+			margin: 0

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title><%= pageTitle %> | <%= siteTitle %></title>
+        <link rel="stylesheet" type="text/css" href="vendor/slicknav/slicknav.css">
+        <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css">
+        <link rel="stylesheet" href="vendor/animsition/animsition.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">  
+        
+        
+        
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements  and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via  file:// -->
+        <!--[if lt IE 9]>
+            <script  src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script  src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]--> 
+    </head>
+    <body>
+        <%- partial("partial/_header") %>
+        
+        <%- yield %>
+        
+        <%- partial("partial/_footer") %>
+        
+        <!-- javascript //-->
+        <script type="text/javascript" src="vendor/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="vendor/slicknav/jquery.slicknav.min.js"></script>
+        <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+        <script type="text/javascript" src="vendor/animsition/jquery.animsition.min.js"></script>
+        <script type="text/javascript" src="js/apps.js"></script>
+        <script src="vendor/jquery.sticky.js"></script>
+        <script type="text/javascript">
+          jQuery(function($) {
+            $('.slick-slider').slick({
+              autoplay: true,
+              dots: true,
+              infinite: true,
+              speed: 2000,
+              slidesToShow: 1,
+              adaptiveHeight: true
+            });
+            // sticky menu under construction
+            // $(".slicknav_menu").sticky({topSpacing:0});
+          });
+        </script>
+    </body>
+</html>

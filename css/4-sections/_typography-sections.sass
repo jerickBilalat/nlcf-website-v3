@@ -1,0 +1,28 @@
+
+.full-title
+	+outer-container
+	border-top: 2px solid $gray
+	display: flex
+	justify-content: center
+	text-align: center
+	margin-top: 20px
+	h2
+		color: #4F8143
+		margin: 0
+		margin-top: -20px
+		background-color: $white
+		width: auto
+		padding: 0 20px 20px
+		z-index: 1
+		@media(max-width: 600px)
+			font-size: 26px
+			line-height: 1.38
+		@media(max-width: 480px)
+			font-size: 22px
+			line-height: 1.38
+.small-group-title
+	h2
+		padding-bottom: 0
+
+.right-full-title
+	+outer-container

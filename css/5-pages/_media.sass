@@ -1,0 +1,237 @@
+.sermon
+	position: relative
+#sermonLoad
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	overflow: scroll
+
+
+.side-info-media
+	margin-right: 0
+	.side-row
+		&:nth-child(3)
+			margin-right: 2%
+	@media(max-width: 600px)
+		display: none
+
+
+// layout full-info-media
+.full-info-media
+	display: none
+	.sermons-window
+		float: left
+		width: 78%
+		overflow: hidden
+		.sermons-blt
+			position: relative
+			width: 200%
+			left: 0
+			+transition(all 0.6s ease-in-out)
+			.sermon-button
+				float: left
+				width: 24%
+				height: auto
+				&:first-child,
+				&:nth-child(2)
+					margin-right: 2%
+	.prev-button,
+	.next-button
+		float: left
+		width: 10%
+		text-align: center
+		margin-top: 5px
+		padding-top: 5px
+		padding-bottom: 5px
+		font-size: 2em
+		background-color: $darkgreen
+		cursor: pointer
+	.prev-button
+		margin-right: 1%
+	.next-button
+		margin-left: 1% 
+	@media(max-width: 600px)
+		display: initial
+
+// styles of full-info-media
+.sermon-button
+	position: relative
+	div
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		cursor: pointer
+		img
+			background-color: $darkgreen
+		a
+			display: block
+			width: 100%
+			height: 100%
+			position: relative
+			background-color: rgba(0, 0, 0, 0.26)
+			&:hover
+				background-color: rgba(0, 0, 0, 0.2)
+			h6
+				position: absolute
+				top: 50%
+				left: 10%
+				color: $silver
+
+// styles for the audio player
+.audio_wrapper
+	width: 100%
+	height: 100%
+	padding-top: 5%
+#audio1, #audio2, #audio3, #audio4, #audio5 
+	width: 90%
+	margin: 10px auto
+	border: 2px solid #848484
+	border-radius: 10px
+	padding-bottom: 10px
+	background-color: rgba(134, 135, 134, 0.8)
+	h4
+		color: white
+		@media(max-width: 400px)
+			margin: 0
+	p
+		margin-bottom: 5px
+		color: white
+
+
+.audio_info 
+	padding: 0
+	margin: 5px 5px 0px 5px
+audio 
+	width: 100%
+	margin: 0 auto
+	display: block
+
+
+#media-photos
+	h2
+		font-family: $georgia
+		text-align: center
+		margin-bottom: 0
+		padding-bottom: 20px
+
+.event-figure-cont
+	position: relative
+	float: left
+	width: 22.5%
+	&:nth-child(1)
+		margin-right: 1%
+		margin-left: 2%
+	&:nth-child(2),
+	&:nth-child(3)
+		margin-right: 1%
+		margin-left: 1%
+	&:nth-child(4)
+		margin-right: 2%
+		margin-left: 1%
+	.gallery-thumb
+		background:
+			position: 50% 50%
+			repeat: no-repeat
+			size: 100%
+	&:nth-child(1)
+		.gallery-thumb
+			background-image: url(../img/pages/page-media/wedding.jpg)
+	&:nth-child(2)
+		.gallery-thumb
+			background-image: url('../img/pages/page-media/familyday.jpg')
+	&:nth-child(3)
+		.gallery-thumb
+			background-image: url('../img/pages/page-media/fathersday2015(3).jpg')
+	&:nth-child(4)
+		.gallery-thumb
+			background-image: url(../img/pages/page-media/familycamp.jpg)
+			
+	h6
+		position: absolute
+		top: -30px
+	span
+		position: absolute
+		top: -5px
+		left: -5px
+		width: 100%
+		height: 100%
+		display: block
+		border: 1px solid gray
+		z-index: 0
+	.gallery-thumb
+		position: relative
+		z-index: 1
+		width: 100%
+		vertical-align: middle
+		color: transparent
+		display: inline-block
+		cursor: pointer
+		&:hover
+			border: 1px solid black
+		div
+			padding-top: 100%
+			display: block
+			height: 0
+
+
+	@media(max-width: 600px)
+		margin-bottom: 20px
+		&:nth-child(odd),
+			width: 46%
+			margin-left: 2%
+			margin-right: 2%
+		&:nth-child(even),
+			width: 46%
+			margin-left: 2%
+			margin-right: 2%
+
+
+
+.gallery-album-load
+	display: none
+	.media-back-button
+		width: auto
+		padding: 5px
+		cursor: pointer
+	a
+		position: relative
+		display: inline-block
+		width: 22%
+		vertical-align: top
+		&:nth-child(1),
+		&:nth-child(5),
+		&:nth-child(9)
+			margin-left: 2%
+			margin-right: 0.5%
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(6),
+		&:nth-child(7)
+			margin-left: 0.5%
+			margin-right: 0.5%
+		&:nth-child(4),
+		&:nth-child(8),
+		&:nth-child(12)
+			margin-left: 0.5%
+			margin-right: 2%
+		button
+			background-color: transparent
+			&:hover
+				background-color: transparent
+.mfp-arrow
+	&, .mfp-prevent-close, .mfp-arrow-right, .mfp-arrow-left
+		background-color: transparent
+.mfp-close, .mfp-prevent-close, .mfp-arrow-right, .mfp-arrow-left
+	&:hover
+		background-color: transparent
+
+
+// typography
+.right-full-title
+	display: none
+	@media(max-width: 768px)
+		display: initial
