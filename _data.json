@@ -4,5 +4,11 @@
     },
     "about": {
         "pageTitle": "About"
+    },
+    "ministries": {
+        "pageTitle": "Ministries"
+    },
+    "smallgroups": {
+        "pageTitle": "Small Groups"
     }
 }
