@@ -10,5 +10,17 @@
     },
     "smallgroups": {
         "pageTitle": "Small Groups"
+    },
+    "events": {
+        "pageTitle": "Events"
+    },
+    "media": {
+        "pageTitle": "Media",
+        "magnificPopCssPath": "./vendor/magnific-popup/magnific-popup.css",
+        "magnificPopJsPath": "./vendor/magnific-popup/jquery.magnific-popup.js"
+    },
+    "contact": {
+        "pageTitle": "Contact"
     }
+    
 }

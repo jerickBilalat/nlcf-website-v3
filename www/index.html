@@ -7,6 +7,7 @@
         
         <title>Home | New Life In Christ Fellowship</title>
         <link rel="stylesheet" type="text/css" href="vendor/slicknav/slicknav.css">
+        <link rel="stylesheet" href="./vendor/magnific-popup/magnific-popup.css">
         <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
         <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css">
         <link rel="stylesheet" href="vendor/animsition/animsition.min.css">
@@ -33,7 +34,7 @@
          target="_blank" title="New Life In Chirst Location">Go to map&nbsp;&#62;</a>
          </span>
           <span>
-            <a href="pages/smallgroups.html" class="animsition-link" title="New life in Christ Small Groups">Join our Small Groups</a>
+            <a href="smallgroups.html" class="animsition-link" title="New life in Christ Small Groups">Join our Small Groups</a>
           </span>
         </div>
         <div class="logo main-logo">
@@ -56,21 +57,21 @@
               </li>
               <li class="more_nav">
                 <div class"nav-item-cont">
-                  <a href="pages/ministries.html" class="animsition-link">Ministries</a></div>
+                  <a href="ministries.html" class="animsition-link">Ministries</a></div>
               </li>
               <li class="more_nav">
                 <div class"nav-item-cont">
-                  <a href="pages/events.html" class="animsition-link">Events</a>
+                  <a href="events.html" class="animsition-link">Events</a>
                 </div>
               </li>
               <li class="more_nav">
                 <div class"nav-item-cont">
-                  <a href="pages/media.html" class="animsition-link">Media</a>
+                  <a href="media.html" class="animsition-link">Media</a>
                 </div>
               </li>
               <li class="more_nav">
                 <div class"nav-item-cont">
-                  <a href="pages/contact.html" class="animsition-link">Contact</a>
+                  <a href="contact.html" class="animsition-link">Contact</a>
                 </div>
               </li>
           </ul>
@@ -89,16 +90,16 @@
                   <a href="about.html">About</a>
               </li>
               <li class="more_nav">
-                  <a href="pages/ministries.html">Ministries</a>
+                  <a href="ministries.html">Ministries</a>
               </li>
               <li class="more_nav">
-                  <a href="pages/events.html">Events</a>
+                  <a href="events.html">Events</a>
               </li>
               <li class="more_nav">
-                  <a href="pages/media.html">Media</a>
+                  <a href="media.html">Media</a>
               </li>
               <li class="more_nav">
-                  <a href="pages/contact.html">Contact</a>
+                  <a href="contact.html">Contact</a>
               </li>
           </ul>
         </nav>
@@ -220,6 +221,7 @@
         <!-- javascript //-->
         <script type="text/javascript" src="vendor/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="vendor/slicknav/jquery.slicknav.min.js"></script>
+        <script src="./vendor/magnific-popup/jquery.magnific-popup.js"></script>
         <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
         <script type="text/javascript" src="vendor/animsition/jquery.animsition.min.js"></script>
         <script type="text/javascript" src="js/apps.js"></script>
@@ -237,6 +239,26 @@
             // sticky menu under construction
             // $(".slicknav_menu").sticky({topSpacing:0});
           });
+        </script>
+        <script type="text/javascript">
+  
+            jQuery(function($) {
+              $('.parent-container').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                  enabled: true,
+                  arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+                  tPrev: 'Previous (Left arrow key)', // title for left button
+                  tNext: 'Next (Right arrow key)', // title for right button
+                  tCounter: '<span class="mfp-counter">%curr% of %total%</span>' // markup of counter
+                  },
+                image: {
+                  verticalFit: true, // Fits image in area vertically
+                  tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
+                  }
+              });
+            });
         </script>
     </body>
 </html>
