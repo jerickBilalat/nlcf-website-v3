@@ -1,31 +1,27 @@
 {
     "index": { 
-        "pageTitle": "Home",
-        "isSelected": "selected"
+        "pageTitle": "Home"
+    },
+    "pastor-message": { 
+        "pageTitle": "Pastor Message"
     },
     "about": {
-        "pageTitle": "About",
-        "isSelected": "selected"
+        "pageTitle": "About"
     },
     "ministries": {
-        "pageTitle": "Ministries",
-        "isSelected": "selected"
+        "pageTitle": "Ministries"
     },
     "smallgroups": {
-        "pageTitle": "Small Groups",
-        "isSelected": "selected"
+        "pageTitle": "Small Groups"
     },
     "events": {
-        "pageTitle": "Events",
-        "isSelected": "selected"
+        "pageTitle": "Events"
     },
     "media": {
-        "pageTitle": "Media",
-        "isSelected": "selected"
+        "pageTitle": "Media"
     },
     "contact": {
-        "pageTitle": "Contact",
-        "isSelected": "selected"
+        "pageTitle": "Contact"
     }
     
 }
