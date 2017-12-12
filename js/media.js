@@ -1,3 +1,5 @@
+
+
 jQuery(function($) {
 	$('.parent-container').magnificPopup({
     delegate: 'a',

@@ -1,6 +1,9 @@
+/*global jQuery*/
+/*global $*/
 
+// Initialize functions
+// can also be use as a table of contents
 jQuery(function($) {
-	animsition();
 	eventsBlt();
 	ministriesBlt();
 	ministriesLoad();
@@ -9,7 +12,6 @@ jQuery(function($) {
 	sermonBlt();
 	displayTimeDate();
 	mobileNav();
-	
 });
 
 // Event page functions
@@ -37,6 +39,8 @@ function displayTimeDate() {
 	$('#todayWeek').html(today.toDateString().substring(0,3));
 	$('#todayDate').html( today.toDateString() );
 }
+
+
 
 // Minitries  functions
 function ministriesBlt() {
@@ -77,6 +81,8 @@ function ministriesLoad() {
 		});
 	});
 }
+
+
 
 // Media functions
 function mediaLoad() {
@@ -123,33 +129,6 @@ function albumLoad() {
 	});
 }
 
-
-// jquery plugins
-
-// page transition function
-function animsition() {
-	$(".animsition").animsition({
-    inClass: 'fade-in-left-lg',
-    outClass: 'fade-out-left-lg',
-    inDuration: 1500,
-    outDuration: 800,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
-    loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    unSupportCss: [
-      'animation-duration',
-      '-webkit-animation-duration',
-      '-o-animation-duration'
-    ],
-    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body'
-  });
-}
 
 // mobile navigation function
 function mobileNav() {
