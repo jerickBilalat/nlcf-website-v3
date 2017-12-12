@@ -1,27 +1,35 @@
 {
     "index": { 
-        "pageTitle": "Home"
+        "pageTitle": "Home",
+        "pageDescription": "New Life In Christ Fellowship in Arden Hills Minnesota is a Filipino American Church with a mission to know Christ and to make him known."
     },
     "pastor-message": { 
-        "pageTitle": "Pastor Message"
+        "pageTitle": "Pastor Message",
+        "pageDescription": "New Life In Christ Fellowship in Arden Hills Minnesota is a Filipino American Church with a mission to know Christ and to make him known."
     },
     "about": {
-        "pageTitle": "About"
+        "pageTitle": "About",
+        "pageDescription": "New Life In Christ Fellowship in Arden Hills Minnesota is a Filipino American Church with a mission to know Christ and to make him known."
     },
     "ministries": {
-        "pageTitle": "Ministries"
+        "pageTitle": "Ministries",
+        "pageDescription": "Join our ministries with a mission to know Christ and to make him known."
     },
     "smallgroups": {
-        "pageTitle": "Small Groups"
+        "pageTitle": "Small Groups",
+        "pageDescription": "We invite you to get involved in one of our local small groups. This provides an opportunity to grow in faith, to be encouraged by others, and to be part of a care group."
     },
     "events": {
-        "pageTitle": "Events"
+        "pageTitle": "Events",
+        "pageDescription": "Upcoming events"
     },
     "media": {
-        "pageTitle": "Media"
+        "pageTitle": "Media",
+        "pageDescription": "Listen to our recorded sermons and browse recent event photo gallery"
     },
     "contact": {
-        "pageTitle": "Contact"
+        "pageTitle": "Contact",
+        "pageDescription": "Come and Worship with us Sunday 10:45AM @ Trinity Lutheran Church of Lake Johanna Facility"
     }
     
 }
