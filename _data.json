@@ -1,26 +1,31 @@
 {
     "index": { 
-        "pageTitle": "Home"
+        "pageTitle": "Home",
+        "isSelected": "selected"
     },
     "about": {
-        "pageTitle": "About"
+        "pageTitle": "About",
+        "isSelected": "selected"
     },
     "ministries": {
-        "pageTitle": "Ministries"
+        "pageTitle": "Ministries",
+        "isSelected": "selected"
     },
     "smallgroups": {
-        "pageTitle": "Small Groups"
+        "pageTitle": "Small Groups",
+        "isSelected": "selected"
     },
     "events": {
-        "pageTitle": "Events"
+        "pageTitle": "Events",
+        "isSelected": "selected"
     },
     "media": {
         "pageTitle": "Media",
-        "magnificPopCssPath": "./vendor/magnific-popup/magnific-popup.css",
-        "magnificPopJsPath": "./vendor/magnific-popup/jquery.magnific-popup.js"
+        "isSelected": "selected"
     },
     "contact": {
-        "pageTitle": "Contact"
+        "pageTitle": "Contact",
+        "isSelected": "selected"
     }
     
 }

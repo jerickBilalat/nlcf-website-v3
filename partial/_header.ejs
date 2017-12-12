@@ -7,7 +7,7 @@
          target="_blank" title="New Life In Chirst Location">Go to map&nbsp;&#62;</a>
          </span>
           <span>
-            <a href="smallgroups.html" class="animsition-link" title="New life in Christ Small Groups">Join our Small Groups</a>
+            <a href="smallgroups.html" class="" title="New life in Christ Small Groups">Join our Small Groups</a>
           </span>
         </div>
         <div class="logo main-logo">
@@ -20,31 +20,31 @@
           <ul>
               <li>
                 <div class"nav-item-cont">
-                  <a href="index.html" class="selected animsition-link">Home</a>
+                  <a href="index.html" class="<%= current.source == 'index' ? 'selected': '' %>">Home</a>
                 </div>
               </li>
               <li>
                 <div class"nav-item-cont">
-                  <a href="about.html" class="animsition-link">About</a>
+                  <a href="about.html" class="<%= current.source == 'about' ? 'selected': '' %>">About</a>
                 </div>
               </li>
               <li class="more_nav">
                 <div class"nav-item-cont">
-                  <a href="ministries.html" class="animsition-link">Ministries</a></div>
+                  <a href="ministries.html" class="<%= current.source == 'ministries' ? 'selected': '' %>">Ministries</a></div>
               </li>
               <li class="more_nav">
                 <div class"nav-item-cont">
-                  <a href="events.html" class="animsition-link">Events</a>
+                  <a href="events.html" class="<%= current.source == 'events' ? 'selected': '' %>">Events</a>
                 </div>
               </li>
               <li class="more_nav">
                 <div class"nav-item-cont">
-                  <a href="media.html" class="animsition-link">Media</a>
+                  <a href="media.html" class="<%= current.source == 'media' ? 'selected': '' %>">Media</a>
                 </div>
               </li>
               <li class="more_nav">
                 <div class"nav-item-cont">
-                  <a href="contact.html" class="animsition-link">Contact</a>
+                  <a href="contact.html" class="<%= current.source == 'contact' ? 'selected': '' %>">Contact</a>
                 </div>
               </li>
           </ul>
@@ -57,21 +57,21 @@
         <nav id="mobileNav">
           <ul>
               <li>
-                  <a href="index.html" class="selected">Home</a>
+                  <a href="index.html" class="<%= current.source == 'index' ? 'selected': '' %>">Home</a>
               </li>
-              <li>
+              <li class="<%= current.source == 'about' ? 'selected': '' %>">
                   <a href="about.html">About</a>
               </li>
-              <li class="more_nav">
+              <li class="more_nav <%= current.source == 'ministries' ? 'selected': '' %>">
                   <a href="ministries.html">Ministries</a>
               </li>
-              <li class="more_nav">
+              <li class="more_nav <%= current.source == 'events' ? 'selected': '' %>">
                   <a href="events.html">Events</a>
               </li>
-              <li class="more_nav">
+              <li class="more_nav <%= current.source == 'media' ? 'selected': '' %>">
                   <a href="media.html">Media</a>
               </li>
-              <li class="more_nav">
+              <li class="more_nav <%= current.source == 'contact' ? 'selected': '' %>">
                   <a href="contact.html">Contact</a>
               </li>
           </ul>

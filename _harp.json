@@ -1,7 +1,8 @@
 {
   "globals": {
     "siteTitle": "New Life In Christ Fellowship",
-    "name"  : "John Doe",
-    "uri": "http://example.com"
+    "author"  : "John Doe",
+    "uri": "http://newlifeinchristfellowship.com",
+    "isSelected": "notSelected"
   }
 }

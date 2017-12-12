@@ -1,0 +1,64 @@
+<hr>
+<div class="contact-page-body">
+	<div class="contact-info-cont">
+		<h3>Contact Info</h3>
+		<div>
+			<div id="contactMap"></div>
+		</div>
+		<div class="contact-info">
+			<a href="" class="address">3245 New Brighton Rd.<br>Arden Hills MN 5512</a>
+			<p>Come and Worship with us <b>Sunday 10:30AM</b><br> @ <b>Trinity Lutheran Church</b> of Lake Johanna Facility
+			</p>
+			<div class="info-buttons">
+				<a href="tel:763-515-3294">Phone:(952)688-7721</a>
+			</div>
+    <div class="info-buttons">
+      <a href="https://www.facebook.com/pages/New-Life-In-Christ-Fellowship-Twin-City-MN/163651137101710" target="_blank"  title="New life in Christ Fellowship Facebook Page">Facebook</a>
+    </div>
+    <div class="info-buttons">
+      <a href="mailto:nlcf.mediagroup@gmail.com">nlcf.mediagroup@gmail.com</a>
+    </div>
+		</div>
+	</div>
+	<div class="contact-form-cont">
+			<section class="contact-form">
+			<h3>Contact Us</h3>
+			<form action="http://formspree.io/jrk.email@yahoo.com" method="Post">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name">
+				<label for="email">Email</label>
+			  <input type="email" name="_replyto" id="email">
+			  <label for="message">Message</label>
+			  <textarea id="message" name="body"></textarea>
+      <!-- under construction -->
+      <!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
+      <input type="hidden" name="_subject" value="New submission!" />
+      <input type="hidden" name="_cc" value="louiesantelices@yahoo.com" />
+      <input type="text" name="_gotcha" style="display:none" />
+			  <input type="submit" value="Send">
+			</form>
+			</section>
+	</div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+  function initialize() {
+    var mapCanvas = document.getElementById('contactMap'),
+        myLatLng = new google.maps.LatLng(45.039746, -93.180781);
+    var mapOptions = {
+      center: myLatLng,
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      scrollwheel: false
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: '3245 New Brighton Rd, Arden Hills MN'
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>

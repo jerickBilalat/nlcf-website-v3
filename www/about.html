@@ -47,7 +47,7 @@
           <ul>
               <li>
                 <div class"nav-item-cont">
-                  <a href="index.html" class="selected animsition-link">Home</a>
+                  <a href="index.html" class=" animsition-link">Home</a>
                 </div>
               </li>
               <li>
@@ -182,12 +182,12 @@
         <div class="flex-cont-justify-center"><h4>New Life In Chirst<br>Fellowship</h4></div>
         <div class="flex-cont-justify-center"><h4><a href="">Phone:(952) 688-7721</a></h4></div>
         <div class="flex-cont-justify-center"><h4>3245 New Brighton Rd.<br>Arden Hills, MN</h4></div>
-        <div class="flex-cont-justify-center"><h4><a href="pages/contact.html">Contact Us</a></h4></div>
+        <div class="flex-cont-justify-center"><h4><a href="./contact.html">Contact Us</a></h4></div>
       </div>
       <div class="info-bar-row row2 flex-cont">
         <div class="flex-cont-justify-center">
           <ol>
-            <li><a href="pages/ministries.html"><h4>Ministries</h4></a></li>
+            <li><a href="./ministries.html"><h4>Ministries</h4></a></li>
             <li>Children</li>
             <li>Youth</li>
             <li>Young Adults</li>
@@ -195,7 +195,7 @@
         </div>
         <div class="flex-cont-justify-center">
           <ol>
-            <li><a href="pages/smallgroups.html"><h4>Small Groups</h4></a></li>
+            <li><a href="./smallgroups.html"><h4>Small Groups</h4></a></li>
             <li>Maplewood</li>
             <li>North Metro</li>
             <li>Woodbury</li>
@@ -203,13 +203,13 @@
         </div>
         <div class="flex-cont-justify-center">
           <ol>
-            <li><a href="pages/events.html"><h4>Events</h4></a></li>
+            <li><a href="./events.html"><h4>Events</h4></a></li>
             <li>No upcoming events</li>
         </ol>
         </div>
         <div class="flex-cont-justify-center">
           <ol>
-            <li><a href="pages/media.html"><h4>Sermon Archive</h4></a></li>
+            <li><a href="./media.html"><h4>Sermon Archive</h4></a></li>
             <li>Marriage</li>
             <li>Galatians</li>
             <li>Matthew</li>
@@ -223,7 +223,7 @@
     <footer class="main-footer row flex-container">
       <div class="social-media-cont">    
         <p>Follow us on:</p>
-        <a href="https://www.facebook.com/pages/New-Life-In-Christ-Fellowship-Twin-City-MN/163651137101710" target="_blank"  title="New life in Christ Fellowship Facebook Page"><img src="img/png/multi-media/facebook.png" alt="facebook"></a>
+        <a href="https://www.facebook.com/./New-Life-In-Christ-Fellowship-Twin-City-MN/163651137101710" target="_blank"  title="New life in Christ Fellowship Facebook Page"><img src="img/png/multi-media/facebook.png" alt="facebook"></a>
         <a href="https://www.youtube.com/channel/UC_R8Lxo2LukPabiGhuiFdhQ/feed" target="_blank" title="New Life in Christ Fellowship Youtube page"><img src="img/png/multi-media/youtube.png" alt="Youtube"></a>
       </div>
       <div class="copyright-cont">
@@ -231,6 +231,8 @@
       </div>			
     </footer>
 <!-- End footer -->
+
+
         
         <!-- javascript //-->
         <script type="text/javascript" src="vendor/jquery-2.1.4.min.js"></script>
@@ -240,6 +242,30 @@
         <script type="text/javascript" src="vendor/animsition/jquery.animsition.min.js"></script>
         <script type="text/javascript" src="js/apps.js"></script>
         <script src="vendor/jquery.sticky.js"></script>
+        
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+          function initialize() {
+            var mapCanvas = document.getElementById('contactMap'),
+                myLatLng = new google.maps.LatLng(45.039746, -93.180781);
+            var mapOptions = {
+              center: myLatLng,
+              zoom: 16,
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              scrollwheel: false
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: '3245 New Brighton Rd, Arden Hills MN'
+            });
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+        
         <script type="text/javascript">
           jQuery(function($) {
             $('.slick-slider').slick({
@@ -254,6 +280,7 @@
             // $(".slicknav_menu").sticky({topSpacing:0});
           });
         </script>
+        
         <script type="text/javascript">
   
             jQuery(function($) {
