@@ -41,24 +41,18 @@
 	</div>
 </div>
 
-<script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
-  function initialize() {
-    var mapCanvas = document.getElementById('contactMap'),
-        myLatLng = new google.maps.LatLng(45.039746, -93.180781);
-    var mapOptions = {
-      center: myLatLng,
+  function initMap() {
+    var uluru = {lat: 45.039746, lng: -93.180781};
+    var map = new google.maps.Map(document.getElementById('contactMap'), {
       zoom: 16,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      scrollwheel: false
-    }
-    var map = new google.maps.Map(mapCanvas, mapOptions);
-
+      center: uluru
+    });
     var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: '3245 New Brighton Rd, Arden Hills MN'
+      position: uluru,
+      map: map
     });
   }
-  google.maps.event.addDomListener(window, 'load', initialize);
 </script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7yJZycGrBKQo8uCMZ7ow0hvPmeaYZ-LI&v=3.31&callback=initMap"></script>
